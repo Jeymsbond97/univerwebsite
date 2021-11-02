@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------scrip tags----------->
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="news.css">
+    <!-------script tags----------->
+    <title>Document</title>
+</head>
+<body>
+    <div id="container_main">
+          <!----------------Nav Bar------------>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            style="color: rgb(245, 222, 222)"
+            class="active"
+            href="teacher.html"
+            >HOME</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  style="color: rgb(245, 222, 222)"
+                  href="https://tuit.uz/"
+                  >ABOUT</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!----------------Nav Bar------------>
+      <p>Add News</p>
+     <form action="#" id="form">       
+        <label for="student">Faculty</label> 
+        <input list="faculty-list" id="faculty" class="same" placeholder="Faculty">
+          <datalist id="faculty-list">
+            <option value="engineering">
+            <option value="international study">
+            <option value="IT">
+            <option value="Major">
+            <option value="Flight">
+          </datalist>
+         
+        <label for="subject">Subject</label>
+           <select name="subject" id="subject" class="same">
+             <option value="Math">Math</option>
+             <option value="English">English</option>
+             <option value="History">History</option>
+             <option value="Programming">Programming</option>
+           </select>
+
+        <label for="date"> Date </label>
+            <input type="date" id="date" name="trip-start" class="same"
+             value="2018-07-22"
+             min="2018-01-01" max="2018-12-31">
+
+        <label for="comment">Add News</label>
+             <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+       
+        <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

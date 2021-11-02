@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:#34495e ;
+
+}
+.box{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+}
+.box h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+}
+.box input[type="text"], input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus, input[type="password"]:focus{
+    width: 270px;
+    border-color: #2ecc71;
+}
+.box button[type="button"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box button[type="button"]:hover{
+    background:#2e33;
+}
+
+
+/* Started maindiv here */
+.maindiv{
+  width: 100%;
+  padding-bottom: 50px;
+}
+.mainbar{
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.mainbar  h1{
+    width: 100vw;
+    text-transform: capitalize;
+    
+}.mainbar h3 h2 {
+    margin: 10px auto;
+}
+.word {
+  text-align: center;
+  margin: auto;
+}
+
+      /* started table_secand */
+
+     /* table style started from here */
+
+
+     table {
+        width: 90%;
+        font-size: 13px;
+        color: rgb(37, 28, 26);
+        border-collapse: collapse;
+        margin: auto;
+      }
+      table > thead {
+        background-color: rgb(196, 155, 164);
+        color: rgb(12, 11, 11);
+        font-size: 18px;
+      }
+      tbody {
+        font-size: 15px;
+      }
+      table > thead th {
+        padding: 15px;
+      }
+      table th,
+      table td {
+        border: 1px solid rgb(37, 32, 32);
+        padding: 10px;
+      }
+      tr:hover {
+        background: lightgrey;
+        transform: scale(1.01);
+      }
+      
+      /* responsible  phone*/
+      
+      @media all and (max-width: 920px) {
+        
+        table thead {
+          display: none;
+        }
+        table {
+          margin: auto;
+          padding-left: 2px;
+        }
+        table,
+        tbody,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+        tr {
+          margin-bottom: 30px;
+        }
+        tr:hover {
+            background: lightgrey;
+            transform: scale(1.01);
+          }
+        tbody tr td {
+          text-align: right;
+      
+          position: relative;
+          font-weight: 35px;
+          overflow: auto;
+        }
+        td:not(:last-child) {
+          border-bottom: 25px solid rgb(104, 99, 99);
+        }
+        
+        
+        span {
+          padding-left: 22%;
+          margin: 0 5px;
+        }
+        td{
+          padding: 30px;
+        }
+        td:hover {
+          background: rgb(194, 184, 184);
+        }
+        td:before {
+          content: attr(data-col-title);
+          position: absolute;
+          left: 3px;
+          width: 25px;
+          font-weight: bolder;
+          font-size: 17px;
+          color: rgb(39, 34, 34);
+          
+        }
+      }
+      
+      /*   responsive 1015 px*/
+      
+      @media all and (max-width: 1015px) {
+       
+        table {
+          width: 95%;
+          margin: auto;
+        }
+        table > thead th {
+          padding: 10px;
+        }
+        table th,
+        table td {
+          border: 1px solid rgb(37, 32, 32);
+          padding: 8px;
+        }
+        tr:hover {
+            background: lightgrey;
+            transform: scale(1.01);
+          }
+      }
+      
+      
